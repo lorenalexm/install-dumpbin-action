@@ -9,3 +9,7 @@ runs:
     - name: Install dumpbin.exe and set up PATH
       shell: powershell
       run: scripts/install-dumpbin.ps1
+
+branding:
+  icon: search
+  color: blue
