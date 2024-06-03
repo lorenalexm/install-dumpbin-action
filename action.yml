@@ -1,0 +1,11 @@
+# action.yml
+
+name: 'Install Dumpbin'
+description: 'Installs dumpbin.exe and sets up the PATH for usage in workflows'
+inputs: {}
+runs:
+  using: "composite"
+  steps:
+    - name: Install dumpbin.exe and set up PATH
+      shell: powershell
+      run: scripts/install-dumpbin.ps1
